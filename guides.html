@@ -5,24 +5,30 @@
     <title>Test Chamber</title>
     <link rel="stylesheet" href="CSS\main.CSS">
     <link rel="stylesheet" href="CSS\guides.CSS">
+
+    <!-- roboto, atkinson-hyper-mono 어쩌고 폰트 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Mono:ital,wght@0,200..800;1,200..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
 
     <div class = "wrapper">
-        <div class = "header">
-            <div class = "nav-wrap">
-                <nav class = "nav-bar">
+        <div class = "nav-wrap">
+            <nav class = "nav-bar">
                     <ul>
                         <li><a href="index.html">Home</a></li>
                         <li><a href="about.html">About</a></li>
                         <li><a href="guides.html">Guides</a></li>
                     </ul>
-                </nav>
-            </div>
-            
+            </nav>
+        </div>
+        <div class = "header">
             <div class = "header-content">
-                <h2 style="margin: 0px;">guides</h2>
+                <h2 style="margin: 90px;">guides</h2>
             </div>
 
         </div>
@@ -41,46 +47,184 @@
                                 <li>Cool Guy Crew</li>
                             </ul>
                             <ul>
-                                <li>The Avg Clan</li>
-                                <li>-</li>
-                                <li>-</li>    
+                                <li>Hyrule</li>
+                                <li>Seal Clubbers Union</li>
+                                <li>The Average Clan</li>    
                             </ul>
                         </div>
-                        <div style="font-size: 15px;" href="guides.html#why-are-these">
-                            <a class="link">Why are these?</a>
+                        <div style="font-size: 15px;">
+                            <a href="guides.html#clan">Why these clans?</a>
                         </div>
                 </div>
             </div>
 
             <div class= "main-content">
-                <h2 id="beginners-guide"> - Beginner's guide -</h2>
+                <h2 id="beginners-guide"> Beginner's guide </h2>
+
+                <!-- links -->
+                <h1 id="communities">Useful Links</h1>
+                <div class="guide-texts">
+                    <ul class="guide-hreflist">
+                        <li><a href="https://www.reddit.com/r/kol/" target="_blank">Reddit</a></li>
+                        <li><a href="https://forums.kingdomofloathing.com/vb/" target="_blank">Forums of Loathing</a></li>
+                        <li><a href="https://wiki.kingdomofloathing.com/Main_Page" target="_blank">A KoL Wiki</a></li>
+                        <li><a href="https://wiki.kolmafia.us/index.php?title=Main_Page" target="_blank">KoLmafia Wiki</a></li>
+                        <li><a href="https://www.loathers.net/scripting/awesome-scripts/" target="_blank">Awesome KoL Scripts</a></li>
+                    </ul>
+                </div>
+
+                <!-- a chat part -->
                 <h1 id="chat">How to chat</h1>
                 <div class="guide-texts">
-                    <a>
-                        blablablablablablablablablabla
-                    </a>
+                    <p>
+                        On the main map, you'll see <b>The Big Mountains</b><br>
+                        <img src="IMG\The Big Mountains.png"></img><br>
+                    </p>
+                    <p>
+                        If you go there, you'll find <b>The Temple of Literacy</b>.  Pass the test there.
+                    </p>
+                    <img src="IMG\The Temple of Literacy.png">
+                    <p>
+                        Once you've passed the temple's test, you'll see <b> "Enter the Chat" </b> at the very top of the right-hand frame.<br>
+                        Click that to enter the chat.<br>
+                        <img src="IMG\Enter The Chat.png"><br>
+                    </p>
                 </div>
+                <!-- a chat command part -->
                 <hr>
-                <h2 id="clan"> - Clan guide - </h2>
-                <h1>Recommanded clans</h1>
+                <h1 id="chat-commands">Useful Chat Commands</h1>
                 <div class="guide-texts">
-                    <a>we recommand thase</a>
-                    <div>
-                    <a>(lists)</a>
-                    </div>
+
                 </div>
-                <h1 id="why-are-these">Why are these?</h1>
+
+                <!-- meat -->
+                 <hr>
+                 <h1 id="meat-farming">How to Make Meat</h1>
                 <div class="guide-texts">
-                    <a>Because blablablaasdfasdfsadfsdafsadfsdafds<br></a>
-                    <a>and blablablabladsfas sadfsdafsdafsadfsdafsadfsadfsadfsadfsadfsadfasd dfsdafsdfsad fsdafsadfasdfsadfasdfasasdfasdfasdfsdafs dafsadfsadfsadfasdfsadfasfsadfsad asdfasdfsadfsdadf.</a>
+                    <!-- 1. basic meat farming -->
+                     <h3>1. Basic Meat Farming</h3>
+                     <p>Check out the wiki.</p>
+                     <ul class="guide-hreflist">
+                        <li><a href="https://wiki.kingdomofloathing.com/Basic_Farming#Low_Level_Farming" target="_blank">Basic Farming</a></li>
+                     </ul>
+                    <!-- 2. mall -->
+                    <h3 id="go-mall">2. The Mall of Loathing</h3>
+                    <img src="IMG\go mall.png">
+                    <p>
+                        Type <span>/go mall</span> or <span>/go search the mall</span> in chat<br>
+                        or follow the image below.<br>
+                    </p>
+                    <div class="image-window">
+                        <img src="IMG\the mall.png">
+                    </div>
+                    <p>
+                        If your level is too low, <b>level up</b> first before using the mall.
+                    </p>
+                        <ul class="guide-hreflist">
+                        <li><a href="https://wiki.kingdomofloathing.com/Power_Leveling" target="_blank">Power Leveling</a></li>
+                     </ul>
+                    <hr>
+                    <b>*** Do NOT use The Flea Market!</b>
+                    <p>
+                        There are scammers mixed in there.
+                        <br><br>Prices cannot be checked properly, and because it's very easy to access, scammers often sell cheap items at several times their normal price.
+                        <br><br> So we strongly recommend using <b>The Mall</b> instead.
+                    </p>
+
+                    <h3>3. 11-leaf Clovers</h3>
+                    <p>
+                        If you go to The Big Mountains, you will find <b>The Hermitage</b>.
+                    </p>
+                    <img src="IMG\Hermit.png">
+                    <p>
+                       -- WIP sorry! --
+                    </p>
+
+                </div>
+
+                <!-- KoL mafia -->
+                <h1 id="chat">KoL mafia</h1>
+                <div class="guide-texts">
+                    <p>If you want to expand your gameplay, we highly recommend <b>KoLmafia</b></p>
+                    <p>It provides various quality-of-life features, especially combat macros and item management, and lets you use convenience scripts made by other players.
+                        <br><br>Check out the detailed info on the wiki linked here.</p>
+                    <ul class="guide-hreflist">
+                        <li><a href="https://wiki.kolmafia.us/index.php?title=Main_Page" target="_blank">KoLmafia Wiki</a></li>
+                        <li><a href="https://wiki.kolmafia.us/index.php?title=Installation" target="_blank">Installation</a></li>
+                    </ul>
+                </div>
+
+                <hr>
+                <!-- clan -->
+                <h2 id="clan"> Clan guide </h2>
+
+                <h1 id="whats-clan">What is Clan?</h1>
+                <div class="guide-texts">
+                    <p>
+                        In short, it’s like a guild or a group.</p>
+                    <p>
+                        When you join a clan, you can use items stored in the clan stash, and receive buffs and extra adventures from the rumpus room.
+                        You can also talk with other clannies in a dedicated chat channel and ask for help. Try typing /c clan or /listen clan.
+                    </p>
+                    <p>
+                        If you are an experienced player, you can also attempt the dungeons located in the clan basement.
+                    </p>
+                    <p>
+                        Below is the clan hall you can visit after joining a clan. Type <span>/go clan</span> in chat, or add it to your top menu.
+                    </p>
+                    <div class="image-window">
+                        <img src="IMG\clan hall_guides.png">
+                    </div>
+                    <p>
+                        You don't have to stay in only one clan. By using the whitelist feature, you can freely move between multiple clans.
+                        <br>Ask a clan staff member or the clan leader about this.
+                    </p>
+
+                </div>
+
+                <!-- recomended clans -->
+                <h1>Recommended Clans</h1>
+                <div class="guide-texts">
+                    <p>We recommend choosing one of the Top 10 clans shown by the clan recruiter.</p>
+                    <p>
+                        However, clans can temporarily appear in the Top 10 by spending a lot of meat on clan advertisements.
+                        <br>So if we had to make specific recommendations, consider the clans below:
+                    </p>
+                    <div style="display: flex; flex-wrap: wrap; padding: 0px;">
+                        <ul>
+                            <li>OldCW</li>
+                            <li>Not Dead Yet</li>
+                            <li>Cool Guy Crew</li>
+                        </ul>
+                        <ul>
+                            <li>Hyrule</li>
+                            <li>The Average Clan</li>    
+                            <li>Seal Clubbers Union</li>
+                        </ul>
+                    </div>
+                    <p>
+                        If a name is missing or you would like to add one, plz send a kmail to Riebeck or Lazulite.
+                    </p>
+                </div>
+
+                <!-- why these? -->
+                <h1 id="why-these">Why these clans?</h1>
+                <div class="guide-texts">
+                    <p>
+                        they're almost always in the top 10, have plenty of friendly players who can help you, and are run in a stable way.<br>
+                        They also tend to have clan bots that support member gameplay, as well as Discord channels for communication. A full rumpus room and a VIP lounge for veteran players are a bonus.
+                    </p>
+                    <p>If none of that interests you, you can create your own clan instead.</p>
                 </div>
             </div>
         </div>
 
+        <!-- footer -->
         <div class = "footer-wrap">
             <div class="footer">
-                <a class="link" style="font-size: 20px;" href="https://youtu.be/Tq3ONIeDglY?si=qMZZua1AvrIJqers" target="_blank">Are you bored?</a>
-                <a style="color: #80858f;"><br><br>Contact - Kmail riebeck(#3610918) or Lazulite(#3746368)</a>
+                <p style="cursor: default; pointer-events: none;">Contact - Kmail riebeck(#3610918) or Lazulite(#3746368)</p>
+                <hr>
+                <p><a class="random-link" href="#">Are you bored?</a></p>
             </div>
         </div>
 

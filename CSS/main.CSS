@@ -18,16 +18,18 @@ body {
     margin: 0px;
     background-color: #e2e5ec;
     font-family: "roboto", sans-serif;
+    color: #5f6572;
 }
 
 .header{
+    display: inline-block;
     background-color: rgb(200, 203, 207);
     height: 250px;
     width: 100%;
 }
 
 .header-content{
-    margin: 50px auto 0px auto;
+    margin: 0px auto 0px auto;
     text-align: center;
     font-size: 30px;
 }
@@ -64,6 +66,7 @@ body {
 .nav-bar a.active{
     outline-style: solid;
     outline-color: white;
+    font-weight: bold;
     color: white;
     cursor: default; /* 마우스 커서를 손가락 모양에서 일반 화살표로 변경 */
     pointer-events: none; /* CSS 레벨에서도 클릭을 무시하게 만듦 (가장 확실함) */
@@ -74,12 +77,17 @@ body {
 }
 
 .footer{
+    color: #8a92a0;
     width: 80%;
     text-align: center;
-    margin: 40px auto 0px auto;
+    margin: 30px auto 0px auto;
     max-width: 1200px;
     height: 1000px;
 }
+.footer [href]{
+    color: #c9ced8;
+}
+
 .main-wrap{
     padding: 30px 20px 50px 20px;
     background-color: white;
@@ -93,13 +101,6 @@ body {
 
 .main-content h1{
     font-size: 25px;
-}
-
-@media (max-width: 768px) {
-    .main-content {
-        width: 95%; /* 화면을 거의 꽉 채우게 변경 */
-        padding: 10px;
-    }
 }
 
 .notice-content{
@@ -126,11 +127,11 @@ body {
     display: inline-block;
 }
 
-.link { text-decoration: none; color: black; }
-.link:visited { text-decoration: none; }
-.link:hover { text-decoration: none; color:gray; }
-.link:focus { text-decoration: none; color: gray; }
-.link:active { text-decoration: none;}
+[href]{ text-decoration: none; color: #3a3e46;}
+[href]:visited { text-decoration: none; }
+[href]:hover { text-decoration: none; color:gray; }
+[href]:focus { text-decoration: none; color: gray; }
+[href]:active { text-decoration: none;}
 
 hr{
     width: 100%;
@@ -138,8 +139,37 @@ hr{
 }
 
 h2{
+    color: black;
     font-size: 40px;
     margin-bottom: 10px;
+    font-family: "roboto";
+}
+
+h1{
+    color: black;
+}
+
+/* 반응형 ㅇㅇ */
+@media (max-width: 768px) {
+    .main-content {
+        width: 95%; /* 화면을 거의 꽉 채우게 변경 */
+        padding: 10px;
+    }
+
+    .notice-content{
+    margin-left: auto;
+    margin-right: auto;
+    width: 95%;
+    background-color: rgb(236, 238, 241);
+    text-align: center;
+    padding: 5px;
+
+}
+}
+
+.image-window {
+    width: 100%;          /* 부모(본문) 너비만큼만 보여주겠다 */
+    overflow-x: auto;     /* 가로로 넘치는 부분은 스크롤로 처리하겠다 */
 }
 
 /* 

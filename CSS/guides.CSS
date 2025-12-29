@@ -1,4 +1,69 @@
 .guide-texts{
     padding-left: 20px;
+    margin-bottom: 10px;
 }
 
+.guide-hreflist{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    gap: 20px;
+    padding: 0px;
+    margin-left: 10px; 
+}
+
+.guide-hreflist li{
+    padding: 10px;
+    border-radius: 5px;
+    background-color: rgb(236, 238, 241);
+}
+
+.guide-hreflist a{
+    color: black;
+}
+
+.guide-texts img{
+    margin: 20px;
+}
+
+.guide-texts span{
+    font-weight: bold;
+    background-color: rgb(240, 240, 240);
+}
+
+h2{
+    text-align: center;
+}
+
+h3{
+    font-size: 22px;
+    margin-bottom: 0px;
+}
+
+@media (max-width: 768px) {
+    .guide-hreflist li{
+        font-size: 15px;
+    }
+
+    .guide-hreflist{
+        display: inline-flex;
+        flex-wrap: wrap;
+        list-style: none;
+        gap: 5px;
+        padding: 0px;
+        margin-left: 0px; 
+    }
+}
+.guide-texts p a{
+    color: #596ed6;
+    font-weight: bold;
+}
+
+.guide-texts p img {
+    overflow: hidden;
+    
+}
+
+[id] {
+    scroll-margin-top: 100px; /* 내비게이션 바의 실제 높이 + 약간의 여유(5~10px)를 입력하세요 */
+}
