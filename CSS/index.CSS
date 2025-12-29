@@ -6,30 +6,38 @@
 }
 
 .index-content{
-    margin-left: auto;
-    margin-right: auto;
     width: 70%;
     height: 650px;
     padding-top: 200px;
 }
+
+
+.index-content h2{
+    font-family: "Roboto";
+    font-size: 70px;
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+.index-content span{
+    font-size: 30px;
+}
+
 
 @media (max-width: 768px) {
     .index-content {
         width: 95%; /* 화면을 거의 꽉 채우게 변경 */
         padding-top: 200px;
     }
-}
 
-.index-content a {
-    font-size: 30px;
-}
+    .index-content h2{
+        font-size: 50px;
+    }
 
-.index-content h2{
-    font-size: 50px;
-    margin: 0;
-    margin-bottom: 20px;
+    .index-content span{
+    font-size: 20px;
 }
-
+}
 
 /* 1. 애니메이션 정의 */
 @keyframes fadeInUp {

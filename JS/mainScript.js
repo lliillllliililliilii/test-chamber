@@ -15,10 +15,34 @@ document.querySelectorAll('.nav-bar a').forEach(link => {
 });
 
 
+// 페이지 로드 후 실행
+window.addEventListener('DOMContentLoaded', () => {
+    //  특정 클래스(.클래스-이름) 내의 모든 이미지를 찾음 (범위는 적절히 수정하세요)
+    const images = document.querySelectorAll('.guide-texts img');
+
+    images.forEach(img => {
+        // 1. 새로운 div(창문)를 만듦
+        const wrapper = document.createElement('div');
+        wrapper.className = 'image-window';
+        
+        // 2. 이미지의 현재 위치에 div를 삽입하고 이미지를 그 안으로 옮김
+        img.parentNode.insertBefore(wrapper, img);
+        wrapper.appendChild(img);
+    });
+});
+
 // 랜덤 링크 연결
 
 // 링크 목록
 const linkPool = [
+
+    //HOP ON NIGHTREIGN
+    "https://youtu.be/4YNrWevvat8?si=bQYEzS3hrRLVMMZW",
+    "https://youtu.be/VJ3SjkcRajY?si=kjN1SfoJBmOnQ9V4",
+
+    //HoloEN Mage Arena - what do you mean DOOM!?
+    "https://youtu.be/gpTVU0JGzpI?si=7G_ikqmIn6oG2TYS",
+
     //미러시
     "https://youtu.be/f3PC1VwJsis?si=wrCGCb9hvEeckjQc",
     //미러시2
@@ -42,6 +66,9 @@ const linkPool = [
     "https://youtu.be/5bcC7jtqSkI?si=zev4YrGljjt9S1PH"
     //라오루 테마2
     ,"https://music.youtube.com/watch?v=dn67NYqrtgQ&si=WQ9cR0Tue0yO11R_"
+
+
+    
 ];
 
 // 클래스가 "random-link"인 요소를 찾아서 이벤트를 걸어줌
