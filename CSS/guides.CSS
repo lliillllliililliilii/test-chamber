@@ -63,7 +63,3 @@ h3{
     overflow: hidden;
     
 }
-
-[id] {
-    scroll-margin-top: 100px; /* 내비게이션 바의 실제 높이 + 약간의 여유(5~10px)를 입력하세요 */
-}
