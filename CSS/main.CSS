@@ -1,0 +1,156 @@
+.atkinson-hyperlegible-mono-light {
+  font-family: "Atkinson Hyperlegible Mono", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: light;
+  font-style: normal;
+}
+
+.roboto-light {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: light;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+body {
+    margin: 0px;
+    background-color: #e2e5ec;
+    font-family: "roboto", sans-serif;
+}
+
+.header{
+    background-color: rgb(200, 203, 207);
+    height: 250px;
+    width: 100%;
+}
+
+.header-content{
+    margin: 50px auto 0px auto;
+    text-align: center;
+    font-size: 30px;
+}
+
+.nav-wrap {
+    position: -webkit-sticky; /* 사파리 브라우저 지원 */
+    position: sticky;
+    top: 0;           /* 화면 가장 위(0)에 붙음 */
+    padding: 5px 0 5px 0;
+    z-index: 10;    /* 다른 콘텐츠보다 위에 보이게 함 */
+    background-color: #8a8f99;
+}
+
+.nav-bar ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap: 20px;
+    padding:0px;
+    font-size: 20px;
+}
+
+
+.nav-bar a{
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+    color: black;
+}
+.nav-bar a:hover { text-decoration: none; color:white }
+.nav-bar a:visited, .nav-bar a:focus, .nav-bar:hover, .nav-bar:active {
+    text-decoration: none;
+}
+.nav-bar a.active{
+    outline-style: solid;
+    outline-color: white;
+    color: white;
+    cursor: default; /* 마우스 커서를 손가락 모양에서 일반 화살표로 변경 */
+    pointer-events: none; /* CSS 레벨에서도 클릭을 무시하게 만듦 (가장 확실함) */
+}
+
+.footer-wrap{
+    padding: 20px;
+}
+
+.footer{
+    width: 80%;
+    text-align: center;
+    margin: 40px auto 0px auto;
+    max-width: 1200px;
+    height: 1000px;
+}
+.main-wrap{
+    padding: 30px 20px 50px 20px;
+    background-color: white;
+}
+.main-content{
+    width: 70%;
+    margin : 10px auto 10px auto;
+
+    max-width: 1200px;
+}
+
+.main-content h1{
+    font-size: 25px;
+}
+
+@media (max-width: 768px) {
+    .main-content {
+        width: 95%; /* 화면을 거의 꽉 채우게 변경 */
+        padding: 10px;
+    }
+}
+
+.notice-content{
+    margin-left: auto;
+    margin-right: auto;
+    width: 500px;
+    background-color: rgb(236, 238, 241);
+    text-align: center;
+    padding: 5px;
+}
+
+.notice-content-wrap{
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+}
+
+.notice-list-wrap{
+    margin-left: -50px;
+}
+
+.notice-content ul{
+    text-align: left;
+    display: inline-block;
+}
+
+.link { text-decoration: none; color: black; }
+.link:visited { text-decoration: none; }
+.link:hover { text-decoration: none; color:gray; }
+.link:focus { text-decoration: none; color: gray; }
+.link:active { text-decoration: none;}
+
+hr{
+    width: 100%;
+    visibility: hidden;
+}
+
+h2{
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+/* 
+하이퍼링크 효과 삭제하는 태그들
+
+걍 텍스트 데코 지우고 컬러 바꾸는거임
+
+a { text-decoration: none; color: black; }
+a:visited { text-decoration: none; }
+a:hover { text-decoration: none; color:white }
+a:focus { text-decoration: none; }
+a:hover, a:active { text-decoration: none; }
+
+ */
