@@ -44,7 +44,7 @@ h3{
     font-size: 22px;
     margin: 0px;
 }
-.move-to{
+.jump-to{
     font-size: 20px;
     margin-top: 30px;
     background-color: rgb(236, 238, 241);
@@ -59,6 +59,7 @@ h3{
 
 .main-content-wrap{
     width: 80%;
+    height: auto;
     margin : 0px auto 10px auto;
 
     display: flex;
@@ -69,31 +70,42 @@ h3{
     flex: 5;
 }
 
-
 .sidebar-wrap{
+    position: -webkit-sticky; /* 사파리 브라우저 지원 */
+    position: sticky;
+    top: 200px;
+    padding: 10px;
     flex: 2;
 }
 
-.sidebar-sticky{
-    position: -webkit-sticky; /* 사파리 브라우저 지원 */
-    position: sticky;
-    top: 50px;
-    padding: 10px;
-}
-
-.sidebar-sticky b{
+.sidebar-wrap b{
     font-size: 20px;
 }
 
-.sidebar-sticky ul li{
+.sidebar-wrap ul li{
     margin-left: -20px;
     margin-top: 8px;
 }
 
-.move-to-index{
+.jump-to-index{
     margin-left: 20px;
 }
 
+.content-index-wrap{
+    width: 500px;
+    display: none;
+}
+
+
+.content-index{
+    display: inline-flex;
+    padding: 10px;
+}
+
+
+.content-index ul{
+    padding-left: 20px;
+}
 
 /* top button */
 
@@ -109,14 +121,23 @@ h3{
 }
 
 @media (max-width: 1300px) {
+    .content-index-wrap{
+        width: 500px;
+        display: block;
+    }
 
-    .move-to{
+    .jump-to{
         width: 95%;
     }
     .main-content-wrap {
         width: 95%;
         padding: 10px;
         gap: 0px;
+    }
+
+    .main-content{
+        margin-left: auto;
+        margin-right: auto;
     }
     
     .sidebar-wrap{
@@ -130,6 +151,12 @@ h3{
 }
 
 @media (max-width: 768px) {
+
+    .content-index-wrap{
+        width: 95%;
+        display: block;
+    }
+
     .inner-contents p{
         padding: 0px;
     }
