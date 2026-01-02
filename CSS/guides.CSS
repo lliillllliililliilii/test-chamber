@@ -3,6 +3,11 @@
     margin-bottom: 10px;
 }
 
+.main-content p{
+    padding-left: 20px;
+    margin-bottom: 10px;
+}
+
 .guide-hreflist{
     display: flex;
     flex-wrap: wrap;
@@ -31,15 +36,6 @@
     background-color: rgb(222, 223, 226);
 }
 
-h2{
-    text-align: center;
-}
-
-h3{
-    font-size: 22px;
-    margin: 0px;
-}
-
 .guide-texts p a{
     color: #596ed6;
     font-weight: bold;
@@ -54,17 +50,18 @@ h3{
         padding: 5px 30px 5px 30px;
 }
 
-/* top button */
-.top-button-wrap{
-    position: -webkit-fixed; /* 사파리 브라우저 지원 */
-    position: fixed;
-    z-index: 10;/* layer 설정 */
-    right: 50px;
-    bottom: 50px;
-    width: 80px;
-    height: auto;
+h2{
     text-align: center;
 }
+
+h3{
+    font-size: 22px;
+    margin: 0px;
+}
+
+
+
+
 
 @media (max-width: 768px) {
     .guide-hreflist li{
@@ -83,13 +80,4 @@ h3{
         margin-left: auto;
         margin-right: auto;
     }
-
-    .top-button-wrap{
-        right: 30px;
-        bottom: 30px;
-        width: 70px;
-        height: auto;
-    }
-
-    
 }

@@ -1,0 +1,160 @@
+.inner-contents{
+    flex: 3;
+}
+
+.inner-contents p{
+    padding-left: 20px;
+    margin-bottom: 10px;
+}
+
+.links-hreflist{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    gap: 20px;
+    padding: 0px;
+    margin-left: 10px;
+}
+
+.links-hreflist li{
+    padding: 10px;
+    border-radius: 5px;
+    background-color: rgb(236, 238, 241);
+}
+
+.inner-contents li{
+    margin-top: 3px;
+}
+
+.inner-contents span{
+    font-weight: bold;
+    background-color: rgb(222, 223, 226);
+}
+
+.inner-contents span a{
+    color: #596ed6;
+    text-decoration: underline;
+}
+
+h2{
+    text-align: center;
+}
+
+h3{
+    font-size: 22px;
+    margin: 0px;
+}
+.move-to{
+    font-size: 20px;
+    margin-top: 30px;
+    background-color: rgb(236, 238, 241);
+    font-weight: bold;
+    padding: 10px;
+    width: 80%;
+}
+
+.text-right{
+    text-align: right;
+}
+
+.main-content-wrap{
+    width: 80%;
+    margin : 0px auto 10px auto;
+
+    display: flex;
+    align-items: flex-start;
+    gap: 40px;
+}
+.main-content{
+    flex: 5;
+}
+
+
+.sidebar-wrap{
+    flex: 2;
+}
+
+.sidebar-sticky{
+    position: -webkit-sticky; /* 사파리 브라우저 지원 */
+    position: sticky;
+    top: 50px;
+    padding: 10px;
+}
+
+.sidebar-sticky b{
+    font-size: 20px;
+}
+
+.sidebar-sticky ul li{
+    margin-left: -20px;
+    margin-top: 8px;
+}
+
+.move-to-index{
+    margin-left: 20px;
+}
+
+
+/* top button */
+
+.top-bottom-wrap{
+    position: -webkit-fixed; /* 사파리 브라우저 지원 */
+    position: fixed;
+    z-index: 10;/* layer 설정 */
+    right: 50px;
+    bottom: 40px;
+    width: 80px;
+    height: auto;
+    text-align: center;
+}
+
+@media (max-width: 1300px) {
+
+    .move-to{
+        width: 95%;
+    }
+    .main-content-wrap {
+        width: 95%;
+        padding: 10px;
+        gap: 0px;
+    }
+    
+    .sidebar-wrap{
+        display: none;
+    }
+
+    .main-content{
+        width: 100%;
+    }
+    
+}
+
+@media (max-width: 768px) {
+    .inner-contents p{
+        padding: 0px;
+    }
+
+    .links-hreflist li{
+        font-size: 15px;
+    }
+
+    .links-hreflist{
+        display: inline-flex;
+        flex-wrap: wrap;
+        list-style: none;
+        gap: 5px;
+        padding: 0px;
+        margin-left: 0px; 
+    }
+
+    .top-bottom-wrap{
+        display: none;
+    }
+
+    .inner-contents{
+        padding: 0px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+}

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>Test Chamber</title>
     <link rel="stylesheet" href="CSS\main.CSS">
-    <link rel="stylesheet" href="CSS\guides.CSS">
+    <link rel="stylesheet" href="CSS\contents.CSS">
 
     <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -36,7 +36,6 @@
         </div>
 
         <div class = "main-wrap">
-
             <!-- Notice -->
             <div class="notice-content center">
                 <div class="notice-content-wrap center">
@@ -61,207 +60,199 @@
                 </div>
             </div>
 
-            <!-- INDEX -->
-
-            <div class="notice-content center" style="background-color: white;">
-                <div class="notice-content-wrap center">
-                    <h3 style="padding: 0px; margin: 0px;">
-                        Index
-                    </h3>
-                        <div class="notice-list-wrap";>
-                            <ul style="vertical-align: top";>
-                                <li><a href="#beginners-guide"><b>Beginner's guide</b></a></li>
-                                <ul>
-                                    <li><a href="#links">Useful Links</a></li>
-                                    <li><a href="#customize-menu">Customize Your Menu</a></li>
-                                    <li><a href="#chat-guide">How to Chat</a></li>
-                                    <ul>
-                                        <li><a href="#chat-commands">Useful Chat Commands</a></li>
-                                    </ul>
-                                    <li><a href="#the-flea-market">DO NOT use The Flea Market!</a></li>
-                                    <li><a href="#kol-mafia">KoL mafia</a></li>
-                                    <li><a href="#meat-farming">How to Make Meat</a></li>
-                                    <ul>
-                                        <li><a href="#basic-meat-farming">Basic Meat Farming</a></li>
-                                        <li><a href="#11-leaf">11-leaf Clovers</a></li>
-                                        <li><a href="#go-mall">The Mall of Loathing</a></li>
-                                    </ul>
-                                </ul>
+            <h2 id="beginners-guide"> Beginner's guide </h2>
+            <hr>
+            <div class="main-content-wrap center">
+                <!-- main contents -->
+                <div class= "main-content">
+                    <!-- inner contents -->
+                    <div class="inner-contents">
+                        <!-- useful links -->
+                        <h1 id="links">Useful Links</h1>
+                            <ul class="links-hreflist">
+                                <li><a href="https://www.reddit.com/r/kol/" target="_blank">Reddit</a></li>
+                                <li><a href="https://forums.kingdomofloathing.com/vb/" target="_blank">Forums of Loathing</a></li>
+                                <li><a href="https://wiki.kingdomofloathing.com/Main_Page" target="_blank">A KoL Wiki</a></li>
+                                <li><a href="https://wiki.kolmafia.us/index.php?title=Main_Page" target="_blank">KoLmafia Wiki</a></li>
+                                <li><a href="https://www.loathers.net/scripting/awesome-scripts/" target="_blank">Awesome KoL Scripts</a></li>
                             </ul>
-                            <ul style="vertical-align: top";>
-                                <li><a href="guides_clan.html#clan-guide"><b>Clan Guide</b></a></li>
+                        <h1 id="customize-menu">Customize Your Menu</h1>
+                        <p>
+                                In the top-right corner, you will see several small menu icons.<br>
+                                From there, click <span>EDIT</span> to customize your menu or add shortcuts.
+                            </p>
+                            <img src="IMG\edit shortcuts.png">
+                            <img src="IMG\edit.png">
+                            <img src="IMG\edit_exit.png">
+
+                            <p>Other icons</p>
+                            <ul>
+                                <li>Two circles and one dot: <span><a href="https://wiki.kingdomofloathing.com/Moons">the two moons</a></span> and a moon satellite.</li>
+                                <li>Question : The help page</li>
+                                <li>Bug : The bug report page</li>
+                                <li>ZZZ : logout</li>
+                            </ul>
+
+                        <!-- a chat part -->
+                        <h1 id="chat-guide">How to Chat</h1>
+                        <p>
+                            On the main map, you'll see <b>The Big Mountains</b><br>
+                        </p>
+                        <img src="IMG\The Big Mountains.png"></img>
+                        <p>
+                            If you go there, you'll find <b>The Temple of Literacy</b>.  Pass the test there.
+                        </p>
+                        <img src="IMG\The Temple of Literacy.png">
+                        <p>
+                            Once you've passed the temple's test, you'll see <b> "Enter the Chat" </b> at the very top of the right-hand frame.<br>
+                            Click that to enter the chat.<br>
+                            <img src="IMG\Enter The Chat.png"><br>
+                        </p>
+
+                        <!-- a chat command part -->
+                        <hr>
+                        <h3 id="chat-commands">Useful Chat Commands</h3>
+
+                        <ul>
+                            <li>Chat Commands - <span>/?</span> or <span>/help</span></li>
+                            <li>Join a channel - <span>/c [channel name]</span> or <span>/channel [channel name]</span></li>
+                            <li>Listen to a channel : 
                                 <ul>
-                                    <li><a href="guides_clan.html#whats-clan">What is Clan?</a></li>
-                                    <li><a href="guides_clan.html#recomended-clans">Recommended Clans</a></li>
-                                    <li><a href="guides_clan.html#why-these-clans">Why these clans?</a></li>
+                                    <li><span>/l [channel name]</span> or <span>/listen [channel name]</span></li>
+                                </ul>
+                            </li>
+                            <li>Chat channels</li>
+                            <ul>
+                                <li><span>/c newbie</span> : a channel for newbies</li>
+                                <li><span>/c clan</span> : your clan's channel</li>
+                                <li><span>/c trade</span> : a trade channel</li>
+                                <li><span><a href="https://wiki.kingdomofloathing.com/Chat_Guide:_Channels" target="_blank">[A KoL Wiki] Chat Guide : Channels</a></span></li>
+                            </ul>
+                        </ul>
+                    
+                        <hr>
+
+                        <!-- the flea market -->
+                        <h1 id="the-flea-market">DO NOT use The Flea Market!</h1>
+                        <img src="IMG\scam.png">
+                        <p>
+                            There are scammers mixed in there.
+                            <br>Prices cannot be checked properly, and because it's very easy to access, scammers often sell cheap items highter than normal price.
+                            <br><br>So we strongly recommend <span><a href="#go-mall">using The Mall</a></span> instead.
+                        </p>
+                    
+                        <!-- KoL mafia -->
+                        <h1 id="kol-mafia">KoL mafia</h1>
+                    
+                        <p>If you want to expand your gameplay, we highly recommend <b>KoLmafia</b></p>
+                        <p>It provides various quality-of-life features, especially combat macros and item management, and lets you use convenience scripts made by other players.
+                            <br><br>Check out the detailed info on the wiki linked here.</p>
+                        <ul>
+                            <li><a href="https://wiki.kolmafia.us/index.php?title=Main_Page" target="_blank">KoLmafia Wiki</a></li>
+                            <li><a href="https://wiki.kolmafia.us/index.php?title=Installation" target="_blank">Installation</a></li>
+                        </ul>
+
+                        <hr>
+                        
+                        <!-- meat farming -->
+                        <h1 id="meat-farming">How to Make Meat</h1>
+                        <!-- basic meat farming -->
+                        <h3 id="basic-meat-farming">1. Basic Meat Farming</h3>
+                        <p>Check out the wiki.</p>
+                            <ul class="links-hreflist">
+                                <li><a href="https://wiki.kingdomofloathing.com/Basic_Farming#Low_Level_Farming" target="_blank">Basic Farming</a></li>
+                            </ul>
+
+                        <!-- 11-leaf clovers -->
+                        <h3 id="11-leaf">2. 11-leaf Clovers</h3>
+                        <img src="IMG\11leaf.png">
+                        <p>This is a way to earn a large amount of meat quickly.(25k-30k each) Just exchange 3 per day and try selling them.</p>
+                        <p>
+                            If you go to The Big Mountains, you will find <b>The Hermitage</b>.
+                        </p>
+                        <img src="IMG\Hermit.png">
+                        <p>
+                        Here, you can exchange up to three 11-leaf clovers per day.
+                        </p>
+                        <img src="IMG\3perday.png">
+                        <p>
+                            The useless trinkets required for the exchange can be obtained randomly by using <b>Chewing gum on a string</b> from <b>The General Store.</b> <span>/go general</span>
+                            <br>About 15-20 gums should be enough.
+                        </p>
+                        <img src="IMG\general.png">
+                        <img src="IMG\gums.png">
+                        <img src="IMG\fishing.png">
+
+                        <p>Sell the 11-leaf clovers at The Mall.</p>
+                        <p>If your level is too low or you do not have enough Meat to open a shop, list them on The Flea Market for around 25k-30k Meat.</p>
+                        <p>
+                            <b>Q. Wait, is it ok to sell them for such a high price?</b> 
+                        </p>
+                        <p>A. Yes. This item has very high demand, which is why the price is high.</p>
+
+                        <hr>
+                        <!-- mall -->
+                        <h3 id="go-mall">3. The Mall of Loathing</h3>
+                        <p>
+                            This is a place where you can sell your items to other players.<br>
+                            To open your own store, you will need some meat.
+                        </p>
+                        <img src="IMG\go mall.png">
+                        <p>
+                            Type <span>/go mall</span> or <span>/go search the mall</span> in chat. You can also add a shortcut for it.<br>
+                        </p>
+                        <p>Or, follow the image below.</p>
+                            <img src="IMG\the mall.png">
+                        <p>
+                            If your level is too low, <b>level up</b> first before using the mall.
+                        </p>
+                        <ul class="links-hreflist">
+                            <li><a href="https://wiki.kingdomofloathing.com/Power_Leveling" target="_blank">Power Leveling</a></li>
+                        </ul>
+
+                    </div><!-- .inner contents -->
+                </div>
+                <!-- main contents -->
+
+                <!-- index -->
+                <div class="sidebar-wrap">
+                    <div class="sidebar-sticky">
+                        <div>
+                            <ul>
+                            <li><a href="#beginners-guide"><b>Beginner's guide</b></a></li>
+                            <ul>
+                                <li><a href="#links">Useful Links</a></li>
+                                <li><a href="#customize-menu">Customize Your Menu</a></li>
+                                <li><a href="#chat-guide">How to Chat</a></li>
+                                
+                                <ul>
+                                    <li><a href="#chat-commands">Useful Chat Commands</a></li>
+                                </ul>
+                                <li><a href="#the-flea-market">DO NOT use The Flea Market!</a></li>
+                                <li><a href="#kol-mafia">KoL mafia</a></li>
+                                <li><a href="#meat-farming">How to Make Meat</a></li>
+                                <ul>
+                                    <li><a href="#basic-meat-farming">Basic Meat Farming</a></li>
+                                    <li><a href="#11-leaf">11-leaf Clovers</a></li>
+                                    <li><a href="#go-mall">The Mall of Loathing</a></li>
                                 </ul>                                
                             </ul>
                         </div>
+                        <div class="move-to-index"><a href="guides_clan.html">Move to Clan Guide</a></div>
+                    </div>
                 </div>
+                <!-- index -->
+                
+            </div>
+            <!-- contents -->
+
+            <hr id="bottom">
+            <!-- clan guides link -->
+            <div class="move-to text-right">
+                <a href="guides_clan.html">-> Move to Clan Guides</a>
             </div>
 
-
-            <div class= "main-content">
-                <h2 id="beginners-guide"> Beginner's guide </h2>
-                <!-- links -->
-                <h1 id="links">Useful Links</h1>
-                <div class="guide-texts">
-                    <ul class="guide-hreflist">
-                        <li><a href="https://www.reddit.com/r/kol/" target="_blank">Reddit</a></li>
-                        <li><a href="https://forums.kingdomofloathing.com/vb/" target="_blank">Forums of Loathing</a></li>
-                        <li><a href="https://wiki.kingdomofloathing.com/Main_Page" target="_blank">A KoL Wiki</a></li>
-                        <li><a href="https://wiki.kolmafia.us/index.php?title=Main_Page" target="_blank">KoLmafia Wiki</a></li>
-                        <li><a href="https://www.loathers.net/scripting/awesome-scripts/" target="_blank">Awesome KoL Scripts</a></li>
-                    </ul>
-                </div>
-
-                <h1 id="customize-menu">Customize Your Menu</h1>
-                <div class="guide-texts">
-                    <p>
-                        In the top-right corner, you will see several small menu icons.<br>
-                        From there, click <span>EDIT</span> to customize your menu or add shortcuts.
-                    </p>
-                    <img src="IMG\edit shortcuts.png">
-                    <img src="IMG\edit.png">
-                    <img src="IMG\edit_exit.png">
-
-                    <p>Other icons</p>
-                    <ul>
-                        <li>Two circles and one dot: <a href="https://wiki.kingdomofloathing.com/Moons"><span>the two moons</span></a> and a moon satellite.</li>
-                        <li>Question : The help page</li>
-                        <li>Bug : The bug report page</li>
-                        <li>ZZZ : logout</li>
-                    </ul>
-                </div>
-
-                <!-- a chat part -->
-                <h1 id="chat-guide">How to Chat</h1>
-                <div class="guide-texts">
-                    <p>
-                        On the main map, you'll see <b>The Big Mountains</b><br>
-                    </p>
-                    <img src="IMG\The Big Mountains.png"></img>
-                    <p>
-                        If you go there, you'll find <b>The Temple of Literacy</b>.  Pass the test there.
-                    </p>
-                    <img src="IMG\The Temple of Literacy.png">
-                    <p>
-                        Once you've passed the temple's test, you'll see <b> "Enter the Chat" </b> at the very top of the right-hand frame.<br>
-                        Click that to enter the chat.<br>
-                        <img src="IMG\Enter The Chat.png"><br>
-                    </p>
-                </div>
-                
-                <!-- a chat command part -->
-                <hr>
-                <h3 id="chat-commands">Useful Chat Commands</h3>
-                <div class="guide-texts">
-                    <ul>
-                        <li>Chat Commands - Type <span>/?</span> or <span>/help</span> in the chat</li>
-                        <li>Join a channel - <span>/c [channel name]</span> or <span>/channel [channel name]</span></li>
-                        <li>Listen to a channel : 
-                            <ul>
-                                <li><span>/l [channel name]</span> or <span>/listen [channel name]</span></li>
-                            </ul>
-                        </li>
-                        <li>Chat channels</li>
-                        <ul>
-                            <li><span>/c newbie</span> : a channel for newbies</li>
-                            <li><span>/c clan</span> : your clan's channel</li>
-
-                        </ul>
-                    </ul>
-                </div>
-                <hr>
-
-                <!-- the flea market -->
-                <h1 id="the-flea-market">DO NOT use The Flea Market!</h1>
-                <div class="guide-texts">
-                    <img src="IMG\scam.png">
-                    <p>
-                        There are scammers mixed in there.
-                        <br>Prices cannot be checked properly, and because it's very easy to access, scammers often sell cheap items highter than normal price.
-                        <br><br>So we strongly recommend <span><a href="#go-mall">using The Mall</a></span> instead.
-                    </p>
-                </div>
-  
-                <!-- KoL mafia -->
-                <h1 id="kol-mafia">KoL mafia</h1>
-                <div class="guide-texts">
-                    <p>If you want to expand your gameplay, we highly recommend <b>KoLmafia</b></p>
-                    <p>It provides various quality-of-life features, especially combat macros and item management, and lets you use convenience scripts made by other players.
-                        <br><br>Check out the detailed info on the wiki linked here.</p>
-                    <ul class="guide-hreflist">
-                        <li><a href="https://wiki.kolmafia.us/index.php?title=Main_Page" target="_blank">KoLmafia Wiki</a></li>
-                        <li><a href="https://wiki.kolmafia.us/index.php?title=Installation" target="_blank">Installation</a></li>
-                    </ul>
-                </div>
-                
-                <!-- meat -->
-                 <hr>
-                 <h1 id="meat-farming">How to Make Meat</h1>
-                <div class="guide-texts">
-                    <!-- 1. basic meat farming -->
-                     <h3 id="basic-meat-farming">1. Basic Meat Farming</h3>
-                     <p>Check out the wiki.</p>
-                     <ul class="guide-hreflist">
-                        <li><a href="https://wiki.kingdomofloathing.com/Basic_Farming#Low_Level_Farming" target="_blank">Basic Farming</a></li>
-                     </ul>
-
-                    <!-- 11-leaf clovers -->
-                    <h3 id="11-leaf">2. 11-leaf Clovers</h3>
-                    <img src="IMG\11leaf.png">
-                    <p>This is a way to earn a large amount of meat quickly.(25k-30k each) Just exchange 3 per day and try selling them.</p>
-                    <p>
-                        If you go to The Big Mountains, you will find <b>The Hermitage</b>.
-                    </p>
-                    <img src="IMG\Hermit.png">
-                    <p>
-                       Here, you can exchange up to three 11-leaf clovers per day.
-                    </p>
-                    <img src="IMG\3perday.png">
-                    <p>
-                        The useless trinkets required for the exchange can be obtained randomly by using <b>Chewing gum on a string</b> from <b>The General Store.</b> <span>/go general</span>
-                        <br>About 15-20 gums should be enough.
-                    </p>
-                    <img src="IMG\general.png">
-                    <img src="IMG\gums.png">
-                    <img src="IMG\fishing.png">
-
-                    <p>Sell the 11-leaf clovers at The Mall.</p>
-                    <p>If your level is too low or you do not have enough Meat to open a shop, list them on The Flea Market for around 25k-30k Meat.</p>
-                    <p>
-                        <b>Q. Wait, is it ok to sell them for such a high price?</b> 
-                    </p>
-                    <p>A. Yes. This item has very high demand, which is why the price is high.</p>
-
-                    <hr>
-                    <!-- mall -->
-                    <h3 id="go-mall">3. The Mall of Loathing</h3>
-                    <p>
-                        This is a place where you can sell your items to other players.<br>
-                        To open your own store, you will need some meat.
-                    </p>
-                    <img src="IMG\go mall.png">
-                    <p>
-                        Type <span>/go mall</span> or <span>/go search the mall</span> in chat. You can also add a shortcut for it.<br>
-                    </p>
-                    <p>Or, follow the image below.</p>
-                        <img src="IMG\the mall.png">
-                    <p>
-                        If your level is too low, <b>level up</b> first before using the mall.
-                    </p>
-                        <ul class="guide-hreflist">
-                        <li><a href="https://wiki.kingdomofloathing.com/Power_Leveling" target="_blank">Power Leveling</a></li>
-                     </ul>
-                    <hr>
-                    
-                    <!-- clan guides link -->
-                    <h1 style="text-align: right;"><a href="guides_clan.html">-> Move to Clan Guides</a></h1>
-
-                </div>
-            </div>
-        </div>
+        </div><!-- main wrap -->
 
 
         <!-- footer -->
@@ -277,8 +268,16 @@
 
     </div>
 
-    <div class = "top-button-wrap" onclick="window.scrollTo(0,0);">
-        <img src="SVG\arrow-sm-up-svgrepo-com.svg" alt="svg" style="width: 100%; height: 100%; filter: invert(50%);">
+    <div class="top-bottom-wrap">
+        <div class = "top-button" onclick="window.scrollTo(0,0);">
+            <img src="SVG\arrow-sm-up-svgrepo-com.svg" alt="svg" style="width: 100%; height: 100%; filter: invert(50%);">
+        </div>
+
+        <div class="bottom-button">
+            <a href="#bottom">
+                <img src="SVG\arrow-sm-down-svgrepo-com.svg" alt="svg" style="width: 100%; height: 100%; filter: invert(50%);">
+            </a>
+        </div>
     </div>
 
     <script src="JS\mainScript.js"></script>

@@ -6,30 +6,34 @@ document.querySelectorAll('.nav-bar a').forEach(link => {
     // 링크의 href 속성값이 현재 페이지 파일명과 같다면
     if (link.getAttribute('href') === currentPage) {
         link.classList.add('active');
+        link.classList.add('block-click');
     }
     
     // 만약 메인페이지(index.html 또는 빈 값)일 때 Home에 불을 켜고 싶다면
     if (currentPage === "" || currentPage === "index.html") {
-        if (link.textContent === "Home") link.classList.add('active');
+        if (link.textContent === "Home") {
+            link.classList.add('active');
+            link.classList.add('block-click');
+        }
     }
 });
 
 
-// 페이지 로드 후 실행
+// 이미지 스크롤 활성 윈도우 추가
 window.addEventListener('DOMContentLoaded', () => {
-    //  특정 클래스(.클래스-이름) 내의 모든 이미지를 찾음 (범위는 적절히 수정하세요)
-    const images = document.querySelectorAll('.guide-texts img');
+    const images = document.querySelectorAll('.main-content img'); //범위 지정
 
     images.forEach(img => {
-        // 1. 새로운 div(창문)를 만듦
+        // 새로운 div 생성
         const wrapper = document.createElement('div');
         wrapper.className = 'image-window';
         
-        // 2. 이미지의 현재 위치에 div를 삽입하고 이미지를 그 안으로 옮김
+        // 이미지의 현재 위치에 div를 삽입하고 이미지를 그 안으로 옮김
         img.parentNode.insertBefore(wrapper, img);
         wrapper.appendChild(img);
     });
 });
+
 
 // 랜덤 링크 연결
 
@@ -67,7 +71,8 @@ const linkPool = [
     //라오루 테마2
     ,"https://music.youtube.com/watch?v=dn67NYqrtgQ&si=WQ9cR0Tue0yO11R_"
 
-
+    // 림버스 in Besiege
+    ,"https://youtu.be/ecmzUieYM1A?si=NBzIiPcpEz0QlIEs"
     
 ];
 

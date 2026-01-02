@@ -23,6 +23,12 @@
     font-size: 30px;
 }
 
+.main-content{
+    width: 80%;
+    height: auto;
+    margin : 10px auto 10px auto;
+    max-width: 1200px;
+}
 
 @media (max-width: 768px) {
     .index-content {

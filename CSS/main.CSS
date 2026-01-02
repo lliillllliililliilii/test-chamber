@@ -21,7 +21,7 @@ body {
 
 .header{
     display: inline-block;
-    background-color: rgb(200, 203, 207);
+    background-color: rgb(191, 197, 207);
     height: 250px;
     width: 100%;
 }
@@ -66,8 +66,11 @@ body {
     outline-color: white;
     font-weight: bold;
     color: white;
-    cursor: default; /* 마우스 커서를 손가락 모양에서 일반 화살표로 변경 */
-    pointer-events: none; /* CSS 레벨에서도 클릭을 무시하게 만듦 (가장 확실함) */
+}
+
+.block-click{
+    cursor: default; /* 마우스 커서를 일반으로 변경 */
+    pointer-events: none; /* CSS 레벨에서도 클릭을 무시하게 만듦 */
 }
 
 .footer-wrap{
@@ -89,12 +92,6 @@ body {
 .main-wrap{
     padding: 30px 20px 50px 20px;
     background-color: white;
-}
-.main-content{
-    width: 70%;
-    margin : 10px auto 10px auto;
-
-    max-width: 1200px;
 }
 
 .main-content h1{
@@ -156,8 +153,8 @@ h1{
 
 /* 반응형 ㅇㅇ */
 @media (max-width: 768px) {
-    .main-content {
-        width: 95%; /* 화면을 거의 꽉 채우게 변경 */
+    .main-content-wrap {
+        width: 95%;
         padding: 10px;
     }
 
