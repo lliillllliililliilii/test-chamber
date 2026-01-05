@@ -64,15 +64,19 @@ h3{
 
     display: flex;
     align-items: flex-start;
-    gap: 40px;
+    gap: 0px;
+
+    justify-content: center; /* 가로 중앙 정렬 */
+
 }
 .main-content{
-    flex: 5;
+    flex: 4;
 }
 
 .sidebar-wrap{
     position: -webkit-sticky; /* 사파리 브라우저 지원 */
     position: sticky;
+    width: 100px;
     top: 200px;
     padding: 10px;
     flex: 2;
@@ -92,7 +96,7 @@ h3{
 }
 
 .content-index-wrap{
-    width: 500px;
+    width: 80%;
     display: none;
 }
 
@@ -130,7 +134,7 @@ h3{
         width: 95%;
     }
     .main-content-wrap {
-        width: 95%;
+        width: 100%;
         padding: 10px;
         gap: 0px;
     }
@@ -139,18 +143,22 @@ h3{
         margin-left: auto;
         margin-right: auto;
     }
-    
+    .main-content{
+        width: 100%;
+    }
+
+}
+
+@media (max-width: 1050px){
+
     .sidebar-wrap{
         display: none;
     }
 
-    .main-content{
-        width: 100%;
-    }
-    
 }
 
-@media (max-width: 768px) {
+@media (max-width: 800px) {
+
 
     .content-index-wrap{
         width: 95%;
@@ -182,6 +190,10 @@ h3{
         padding: 0px;
         margin-left: auto;
         margin-right: auto;
+    }
+
+    .sidebar-wrap{
+        display: none;
     }
 
 }
