@@ -21,9 +21,21 @@
         <div class = "nav-wrap">
             <nav class = "nav-bar">
                     <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="guides.html">Guides</a></li>
+                        <li><a href="index.html" id="nav">Home</a></li>
+                        <li onmouseenter="showMenu('about-sub')" onmouseleave="hideMenu('about-sub')">
+                            <a href="about.html" id="nav">About</a>
+                            <ul class="nav-sublist" id="about-sub">
+                                <li><a href="about.html">About</a></li>
+                                <li><a href="about_ClanFurniture.html">Clan Furniture</a></li>
+                            </ul>
+                        </li>
+                        <li onmouseenter="showMenu('guides-sub')" onmouseleave="hideMenu('guides-sub')">
+                            <a href="guides.html" id="nav">Guides</a>
+                            <ul class="nav-sublist" id="guides-sub">
+                                <li><a href="guides.html">Beginner's Guide</a></li>
+                                <li><a href="guides_clan.html">Clan Guide</a></li>
+                            </ul>
+                        </li>
                     </ul>
             </nav>
         </div>

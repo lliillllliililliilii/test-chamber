@@ -39,8 +39,8 @@ body {
     padding: 5px 0 5px 0;
     z-index: 10;    /* 다른 콘텐츠보다 위에 보이게 함 */
     background-color: #8a8f99;
-}
 
+}
 .nav-bar ul {
     list-style: none;
     display: flex;
@@ -51,6 +51,26 @@ body {
     font-size: 20px;
 }
 
+.nav-sublist{
+    position: absolute;
+    top: 100%;
+    overflow: hidden;
+    max-height: 0px;
+  
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-sublist::before,.nav-sublist::after {
+    content: "";
+    display: block;
+    height: 1px;
+}
+
+.nav-bar .nav-sublist a:hover{
+    text-decoration: none; color:#8a8f99;
+}
 
 .nav-bar a{
     padding: 10px 20px 10px 20px;

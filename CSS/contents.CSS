@@ -69,14 +69,17 @@ h3{
     justify-content: center; /* 가로 중앙 정렬 */
 
 }
+
 .main-content{
     flex: 4;
+    max-width: 800px;
 }
 
 .sidebar-wrap{
     position: -webkit-sticky; /* 사파리 브라우저 지원 */
     position: sticky;
-    width: 100px;
+    max-width: 500px;
+    min-width: 360px;
     top: 200px;
     padding: 10px;
     flex: 2;
@@ -138,19 +141,15 @@ h3{
         padding: 10px;
         gap: 0px;
     }
-
-    .main-content{
-        margin-left: auto;
-        margin-right: auto;
-    }
     .main-content{
         width: 100%;
+        margin-left: auto;
+        margin-right: auto;
     }
 
 }
 
 @media (max-width: 1050px){
-
     .sidebar-wrap{
         display: none;
     }
@@ -158,8 +157,6 @@ h3{
 }
 
 @media (max-width: 800px) {
-
-
     .content-index-wrap{
         width: 95%;
         display: block;

@@ -2,12 +2,19 @@
 const currentPage = window.location.pathname.split("/").pop();
 
 // 내비게이션 바의 모든 링크를 검사
-document.querySelectorAll('.nav-bar a').forEach(link => {
+document.querySelectorAll('.nav-bar > ul > li > a').forEach(link => {
     // 링크의 href 속성값이 현재 페이지 파일명과 같다면
-    if (link.getAttribute('href') === currentPage) {
+    const href = link.getAttribute('href');
+
+    if (href === currentPage || (href !== "" && currentPage.startsWith(href.replace('.html', '')))) {
         link.classList.add('active');
         link.classList.add('block-click');
     }
+
+/*     if (link.getAttribute('href') === currentPage) {
+        link.classList.add('active');
+        link.classList.add('block-click');
+    } */
     
     // 만약 메인페이지(index.html 또는 빈 값)일 때 Home에 불을 켜고 싶다면
     if (currentPage === "" || currentPage === "index.html") {
@@ -34,6 +41,24 @@ window.addEventListener('DOMContentLoaded', () => {
     });
 });
 
+// 하위목록 보여줌
+function showMenu(id) {
+  const menu = document.getElementById(id);
+  if (menu) {
+    menu.style.maxHeight = '1000px';
+    menu.style.transition = 'max-height 0.4s ease-out';
+  }
+}
+
+// 하위목록 숨김
+function hideMenu(id) {
+  const menu = document.getElementById(id);
+  if (menu) {
+    menu.style.transition = 'max-height 0.4s ease-out';
+    menu.style.maxHeight = '0px';
+
+  }
+}
 
 // 랜덤 링크 연결
 
