@@ -1,0 +1,141 @@
+
+
+.about-sub{
+    margin-top: 50px; margin-bottom: 50px;
+    width: 80%;
+    max-width: 1000px;
+}
+
+.furniture-contents-wrap{
+    width: 80%;
+    max-width: 1000px;
+}
+
+.furniture-list{
+    margin-bottom: 30px;
+}
+
+.furniture-lists-wrap{
+    width: 85%;
+}
+
+.furniture-list b{
+    font-size: 19px;
+    margin-right: 10px;
+}
+
+.furniture-list ul{
+    margin-bottom: 20px;
+}
+
+
+.furniture-list>ul>li{
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+
+.furniture-list img{
+    vertical-align: bottom;
+}
+
+.table-top{
+    width: 300px; height: 100px;
+}
+.table-bottom{
+    width: 350; height: auto;
+}
+
+.table-edges{
+    width: 25px;
+    height: 300px;
+}
+.fst-line{
+    width: 100px;
+    height: 150px;
+}
+
+.snd-line{
+    width: 100px;
+    height: 100px;
+}
+
+/* 전체 테이블에 적용 */
+table{
+    border-collapse: collapse;
+}
+
+table p{
+    padding: 0px 3px 0px 3px !important;
+}
+
+table img{
+    border: 0;
+    transition: opacity 0.3s ease;
+    display: block;
+}
+.non-available img{
+    opacity: 0.3 !important;
+}
+.static:hover img{
+    opacity: 1 !important;
+}
+
+
+/* Rumpis room */
+.furni-table:hover td.item img{
+    opacity:0.3;
+}
+
+.furni-table td.item:hover img{
+    opacity:1;
+}
+
+
+/* vip lounge */
+.vip-tables-wrap{
+    display: inline-block;
+}
+
+/* 툴팁 설정 (전체 테이블) */
+.item {
+    position: relative;
+    text-align: center;
+}
+
+.tooltip {
+    position: absolute;
+    bottom: 90%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(63, 71, 88, 0.87);
+    color: #fff;
+
+    padding-left: 8px;
+    padding-right: 8px;
+    border-radius: 6px;
+    font-size: 12px;
+    white-space: nowrap;
+    z-index: 10;
+
+    /* 효과 설정 */
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s, transform 0.3s;
+}
+
+/* item 클래스에 마우스 호버 시 띄움 */
+.item:hover .tooltip {
+    visibility: visible;
+    opacity: 1;
+    transform: translateX(-50%) translateY(-10px); /* 위로 살짝 올라오는 애니메이션 */
+}
+
+@media (max-width: 1000px){
+    .furniture-lists-wrap{
+        width: 95%;
+    }
+
+    .about-sub{
+        width: 95%;
+    }
+}

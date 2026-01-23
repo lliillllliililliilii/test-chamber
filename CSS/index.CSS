@@ -1,51 +1,67 @@
 .index-wrap{
     text-align: center;
- /* 백그라운드 이미지 추가할 것 */
-    padding: 10px;
+    /* 백그라운드 이미지 추가할 것 */
+    width: 100%;
+    height: 1000px;
+    min-height: 500px;
+    overflow: hidden;
+    background-image: url('../IMG/index_bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;       /* 이미지가 영역을 꽉 채우도록 */
+    background-position: center;  /* 이미지를 가운데 정렬 */
+}
 
+.index-textbox{
+    width: 600px;
+    padding: 0px;
+       /* 1. 배경을 아주 옅게 설정 */
+    background-color: rgba(79, 86, 104, 0.527); 
+    
+    /* 2. 박스 뒷부분만 블러 처리 (핵심!) */
+    backdrop-filter: blur(5px); 
+    color: white;
+    padding: 40px;
+
+    margin-top: 200px;
+    vertical-align: middle;
 }
 
 .index-content{
     width: 70%;
     height: 650px;
-    padding-top: 200px;
 }
 
-
 .index-content h2{
-    font-family: "Roboto";
+    font-family: "Overpass";
     font-size: 70px;
-    margin: 0;
-    margin-bottom: 20px;
+    margin: 0px;
 }
 
 .index-content span{
     font-size: 30px;
 }
 
-.main-content{
-    width: 80%;
-    height: auto;
-    margin : 10px auto 10px auto;
-    max-width: 1200px;
-}
-
-@media (max-width: 768px) {
+@media (max-width: 800px) {
+    .index-textbox{
+        width: 90%;
+        margin-top: 0px;
+        padding: 20px;
+    }
     .index-content {
-        width: 95%; /* 화면을 거의 꽉 채우게 변경 */
-        padding-top: 200px;
+        width: 95%;
+        padding-top: 150px;
     }
 
     .index-content h2{
         font-size: 50px;
+        margin: 0;
     }
 
     .index-content span{
-    font-size: 20px;
-}
+        font-size: 20px;
+    }
 }
 
-/* 1. 애니메이션 정의 */
 @keyframes fadeInUp {
     from {
         opacity: 0;
@@ -59,7 +75,7 @@
 
 /* 2. 애니메이션 적용 */
 .fade-in-up {
-    animation: fadeInUp 1s ease-out forwards; 
+    animation: fadeInUp 0.5s ease-out forwards; 
     /* 1초 동안, 부드럽게 끝남, 애니메이션 끝난 후 상태 유지 */
 }
 

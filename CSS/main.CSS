@@ -3,20 +3,31 @@
   font-optical-sizing: auto;
   font-weight: light;
   font-style: normal;
-  font-variation-settings:
-    "wdth" 100;
+  font-variation-settings:"wdth" 100;
+}
+
+
+.overpass {
+  font-family: "Overpass", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: bold;
+  font-style: normal;
 }
 
 body {
     margin: 0px;
-    background-color: #e2e5ec;
     font-family: "Roboto", sans-serif;
     color: #5f6572;
+    background-color: #e2e5ec;
 }
 
 .center{
     margin-left: auto;
     margin-right: auto;
+}
+
+.tx-center{
+    text-align: center;
 }
 
 .header{
@@ -30,6 +41,7 @@ body {
     margin: 0px auto 0px auto;
     text-align: center;
     font-size: 30px;
+    font-family: "Overpass";
 }
 
 .nav-wrap {
@@ -95,6 +107,7 @@ body {
 
 .footer-wrap{
     padding: 20px;
+    background-color: #e2e5ec;
 }
 
 .footer{
@@ -111,7 +124,7 @@ body {
 
 .main-wrap{
     padding: 30px 20px 50px 20px;
-    background-color: white;
+    background: white;
 }
 
 .main-content h1{
@@ -172,7 +185,7 @@ h1{
 
 
 /* 반응형 ㅇㅇ */
-@media (max-width: 768px) {
+@media (max-width: 800px) {
     .main-content-wrap {
         width: 95%;
         padding: 10px;
@@ -182,7 +195,11 @@ h1{
     width: 95%;
     background-color: rgb(236, 238, 241);
     text-align: center;
-    padding: 5px;
+    padding: 2px;
+    }
+
+    .notice-list-wrap{
+        margin-left: -10px;
     }
 
     .image-window{
@@ -192,16 +209,3 @@ h1{
     }
 }
 
-
-/* 
-하이퍼링크 효과 삭제하는 태그들
-
-걍 텍스트 데코 지우고 컬러 바꾸는거임
-
-a { text-decoration: none; color: black; }
-a:visited { text-decoration: none; }
-a:hover { text-decoration: none; color:white }
-a:focus { text-decoration: none; }
-a:hover, a:active { text-decoration: none; }
-
- */

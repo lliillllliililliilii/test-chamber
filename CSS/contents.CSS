@@ -1,5 +1,5 @@
-.inner-contents{
-    flex: 3;
+.flex{
+    flex:4;
 }
 
 .inner-contents p{
@@ -44,6 +44,7 @@ h3{
     font-size: 22px;
     margin: 0px;
 }
+
 .jump-to{
     font-size: 20px;
     margin-top: 30px;
@@ -71,18 +72,17 @@ h3{
 }
 
 .main-content{
-    flex: 4;
-    max-width: 800px;
+    max-width: 1000px;
 }
 
 .sidebar-wrap{
     position: -webkit-sticky; /* 사파리 브라우저 지원 */
     position: sticky;
-    max-width: 500px;
+    max-width: 300px;
     min-width: 360px;
     top: 200px;
     padding: 10px;
-    flex: 2;
+    flex: 1;
 }
 
 .sidebar-wrap b{
@@ -149,7 +149,7 @@ h3{
 
 }
 
-@media (max-width: 1050px){
+@media (max-width: 1130px){
     .sidebar-wrap{
         display: none;
     }

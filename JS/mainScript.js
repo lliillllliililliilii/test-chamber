@@ -62,7 +62,7 @@ function hideMenu(id) {
 
 // 랜덤 링크 연결
 
-// 링크 목록
+// 링크 리스트
 const linkPool = [
 
     //HOP ON NIGHTREIGN
@@ -79,8 +79,13 @@ const linkPool = [
     //미러시 쇼츠
     "https://youtube.com/shorts/Q2yHBY6j_Ok?si=54VKCKi8YBkPbqQP",
 
+    // 로보토미 새 춤추는 짤
+    "https://youtube.com/shorts/B8xDPbdUJDg?si=doaYHTBcny384Syk",
     // 림버스 스토리 요약
     "https://youtu.be/KOpRyDa7LaA?si=y7MpjcF2g2tATrj0",
+    // 림버스 in Besiege
+    "https://youtu.be/ecmzUieYM1A?si=NBzIiPcpEz0QlIEs",
+    
 
     //아스고어 밈
     "https://youtu.be/u5NqO2v_xnY?si=nymTLknynyK_LZJE",
@@ -96,12 +101,15 @@ const linkPool = [
     //라오루 테마2
     ,"https://music.youtube.com/watch?v=dn67NYqrtgQ&si=WQ9cR0Tue0yO11R_"
 
-    // 림버스 in Besiege
-    ,"https://youtu.be/ecmzUieYM1A?si=NBzIiPcpEz0QlIEs"
-    
+
+    // Chsesssss
+    , "https://youtu.be/_ON0MJEIzSE?si=g1UjG4WgiLpaer84"
+
+    //PHOENIX
+    ,"https://youtu.be/E4w4pzj9wE8?si=ItiFX6G4CEXcDzkC"
 ];
 
-// 클래스가 "random-link"인 요소를 찾아서 이벤트를 걸어줌
+// 대충 랜덤 링크 걸어주는거
 document.querySelector('.random-link').addEventListener('click', function(event) {
     event.preventDefault(); // 기본 이동을 막고
 
